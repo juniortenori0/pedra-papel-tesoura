@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokenPô</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pedra, Papel, Tesoura</h1>
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#x1f44a;</button>
+
+            <button id="paper" onclick="playHuman('paper')">&#x1f590;</button>
+
+            <button id="scissors" onclick="playHuman('scissors')">&#x270c;</button>
+        </div>
+
+        <div class="hands-container">
+
+            <div class="hand" id="player-hand">✊</div>
+
+
+            <div class="hand" id="machine-hand">✊</div>
+        </div>
+
+        <p class="result"></p>
+
+        <p class="result"></p>
+
+        <p class="score">Sua Pontuação: <span id="human-score">0</span></p>
+        <p class="machine-score">Pontuação do Computador: <span id="machine-score">0</span></p>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

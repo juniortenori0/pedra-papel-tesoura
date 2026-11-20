@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://picsum.photos/1920/1080");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background: rgb(255, 253, 253);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons {
+    margin: 25px 0;
+    display: flex;
+    gap: 40px;
+
+
+}
+
+button:hover {
+    opacity: 0.7;
+
+}
+
+#rock {
+    background-color: #a200ff;
+
+
+
+}
+
+#paper {
+    background-color: #9ee01a;
+
+
+}
+
+#scissors {
+    background-color: #7dbeed;
+
+
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.score span {
+    color: #2b0270;
+}
+
+.computer-score span {
+    color: #b40a0a;
+}
+
+.hands-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 5rem;
+    margin: 20px 0;
+}
+
+#machine-hand {
+    transform: scaleX(-1);
+}
+
+
+@keyframes shakeHand {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.shake {
+    animation: shakeHand 0.5s ease infinite;
+}
